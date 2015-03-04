@@ -1,0 +1,245 @@
+
+body {
+	font-family: "Open Sans Condensed", sans-serif;
+	margin:0;
+	font-size: 1em;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 0.83em 0;
+	font-family: "Days One", sans-serif; font-weight: 400;
+}
+
+.container {
+	margin:0 auto; 
+	width:100%; 
+	display: table;
+}
+
+.wrapper {
+	max-width:1124px;
+	width:94%;
+	margin:0 auto;
+	position:relative;
+}
+
+.inner {
+	padding: 30px 0;
+}
+
+/* ------------------------------------------
+1.  COLUMNS
+--------------------------------------------- */
+
+.columns {
+	clear: both;
+	padding: 0px;
+	margin-left: -2%; 
+	width:102%; 
+	overflow: hidden;
+    *zoom:1; /* For IE 6/7 */
+}  
+
+.one_tenth {
+	width: 8%; 
+	*width: 7.93%;
+}
+.one_ninth {
+	width: 9.1%; 
+	*width: 8.95%;
+}
+.one_eighth {
+	width: 10.5%; 
+	*width: 10%;
+}
+.one_seventh {
+	width: 12.28%; 
+	*width: 12%;
+}
+.one_sixth { 
+	width: 14.66%; 
+	*width: 14%;
+}
+.one_fifth { 
+	width: 18%; 
+	*width: 17.93%;
+}
+.one_fourth {
+	width: 23%; 
+	*width: 22.93%;
+}
+
+.one_third {
+	width: 31.33%;
+	*width: 31%;
+}
+.one_half {
+	width: 48%;
+	*width: 47.93%;
+}
+.two_thirds {
+	width: 64.67%;
+	*width: 64.5%;
+}
+
+.full_width {
+	width: 98%
+	*width: 97.93%;
+}
+    
+.one_tenth,
+.one_ninth,
+.one_eighth,
+.one_seventh,
+.one_sixth,
+.one_fifth,
+.one_fourth, 
+.one_third,
+.one_half,
+.two_thirds,
+.full_width {
+	background: #dedede;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	text-align: center;
+	display: block;
+	_display: inline;
+	float:left;
+	margin: 1% 0 1% 2%;
+}
+
+.one_tenth img, 
+.one_ninth img,
+.one_eighth img,
+.one_seventh img,
+.one_sixth img,
+.one_fifth img,
+.one_fourth img,
+.one_third img, 
+.one_half img, 
+.two_thirds img,
+.full_width img {
+	max-width: 100%;
+	height: auto;
+	display: inline-block;
+}
+
+/*--------------------------------------------------------------
+2. Alignments
+--------------------------------------------------------------*/
+
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*--------------------------------------------------------------
+	MIN-WIDTH:768px AND MAX-WIDTH:960px
+--------------------------------------------------------------*/
+@media all and (min-width: 768px) and (max-width: 960px) {
+ 
+    .one_tenth { width: 18%; }
+    .one_eighth { width: 23%; }
+    .one_sixth { width: 31.33%; }
+    .one_fourth { width:  48%; }	
+
+}
+
+/*--------------------------------------------------------------
+	MAX-WIDTH:767px
+--------------------------------------------------------------*/
+@media all and (max-width: 767px) {
+
+	/* COLUMNS ROW */
+	.one_tenth,
+	.one_ninth,
+	.one_eighth,
+	.one_seventh,
+	.one_sixth,
+	.one_fifth,
+	.one_fourth, 
+	.one_third, 
+	.one_half,
+	.two_thirds {
+		width: 98%;
+	}
+			
+	.one_tenth img, 
+	.one_ninth img,
+	.one_eighth img,
+	.one_seventh img,
+	.one_sixth img,
+	.one_fifth img,
+	.one_fourth img,
+	.one_third img, 
+	.one_half img, 
+	.two_thirds img,
+	.full_width img {
+		margin:0 auto;
+		display: block;
+	}
+
+	/* Alignments */
+	.alignleft,
+	.alignright,
+	.aligncenter {
+		margin:10px auto;
+		display: block;
+		float: none;
+	}
+
+	
+	h1, h2, h3, h4, h5, h6, p {
+		text-align: center;
+	}
+	
+  /** END **/   
+}
+
+@media all and (min-width: 651px) and (max-width: 767px) {
+	
+	/* COLUMNS ROW */
+	.one_tenth {
+		width: 18%;
+	}
+	.one_eighth {
+		width: 23%;
+	}
+	.one_ninth,
+	.one_sixth {
+		width: 31.33%;
+	}
+	
+	.one_fourth {
+		width: 48%;
+	}
+    
+}
+
+
+@media all and (min-width: 481px) and (max-width: 650px) {
+	
+	/* COLUMNS ROW */
+	.one_tenth,
+	.one_eighth {
+		width: 48%;
+	}	
+	
+    
+}
